@@ -1,9 +1,7 @@
 /** @jsx React.DOM */
 'use strict';
 
-var React = require('react');
-
-module.exports = React.createClass({
+React.visibilitySensor = React.createClass({
   displayName: 'VisibilitySensor',
 
   propTypes: {
@@ -69,7 +67,7 @@ module.exports = React.createClass({
 
   render: function () {
     return (
-      React.DOM('div', null, [this.props.children])
+      React.createElement('div', null, [this.props.children])
     );
   }
 });
